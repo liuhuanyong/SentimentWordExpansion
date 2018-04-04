@@ -100,7 +100,7 @@ class SoPmi:
                              line.strip().split('\t')[1] == 'neg']).intersection(set(word_dict.keys()))
             return pos_words, neg_words
         '''计算sopmi值'''
-        def compute_sopmi(candi_words, pos_words, neg_words, word_dict, co_dict):
+        def compute_sopmi(candi_words, pos_words, neg_words, word_dict, co_dict, all):
             pmi_dict = dict()
             for candi_word in set(candi_words):
                 pos_sum = 0.0
@@ -130,7 +130,7 @@ class SoPmi:
         word_dict, all = collect_worddict(seg_data)
         co_dict, candi_words = collect_cowordsdict(cowords_list)
         pos_words, neg_words = collect_sentiwords(sentiment_path, word_dict)
-        pmi_dict = compute_sopmi(candi_words, pos_words, neg_words, word_dict, co_dict)
+        pmi_dict = compute_sopmi(candi_words, pos_words, neg_words, word_dict, co_dict, all)
         return pmi_dict
 
     '''保存结果'''
@@ -177,7 +177,7 @@ class SoPmi:
         self.save_candiwords(pmi_dict, self.candipos_path, self.candineg_path)
         end_time = time.time()
         print('finished! cost {0}'.format(end_time - start_time))
-        
+
 def test():
     sopmier = SoPmi()
     sopmier.sopmi()
