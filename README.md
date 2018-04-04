@@ -18,9 +18,10 @@ step 4/4:   save candiwords
 3）参数：  
 1、window_size: 默认为5， 左右窗口为5， 作为词共现窗口  
 # 结果：
-以65M语料, 2700个词作为语料进行训练，按照sopmi进行从大到小排序，分别取Pos Top20, Neg Top20:  
-1、Pos Top20  
-word	sopmi	polarity	word_length	postag  
+以本项目5M语料，100个情感种子词作为语料进行训练得到的结果，可参考2）输出  
+以65M语料, 2700个情感种子词作为语料进行训练，按照sopmi进行从大到小排序，分别取Pos Top20, Neg Top20:  
+1、Pos Top20  中
+word	sopmi	polarity	word_length	postag  
 引领	580.764033	pos	2	v  
 带动	427.556128	pos	2	v  
 特色	412.6122548	pos	2	n  
