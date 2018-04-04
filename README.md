@@ -18,7 +18,8 @@ step 4/4:...save candiwords ...
 3）参数：  
 1、window_size: 默认为5， 左右窗口为5， 作为词共现窗口  
 # 结果：
-1、以65M语料, 2700个词作为语料进行训练，按照sopmi进行从大到小排序，分别取Pos Top20, Neg Top20:  
+以65M语料, 2700个词作为语料进行训练，按照sopmi进行从大到小排序，分别取Pos Top20, Neg Top20:  
+1、Pos Top20  
 word	sopmi	polarity	word_length	postag
 引领	580.764033	pos	2	v  
 带动	427.556128	pos	2	v  
@@ -40,6 +41,8 @@ word	sopmi	polarity	word_length	postag
 成绩	290.1984593	pos	2	n  
 影响力	288.9637384	pos	3	n  
 强劲	286.3402434	pos	2	a  
+2、Neg Top20  
+word	sopmi	polarity	word_length	postag  
 造成	-2312.1367	neg	2	v  
 导致	-2138.488406	neg	2	v  
 问题	-2134.288251	neg	2	n  
