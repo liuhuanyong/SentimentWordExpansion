@@ -3,10 +3,10 @@ Self complemented sentiment words expansion using seed sentiment words and so-pm
 # 运行方式： 
 python SOPMI.py  
 # 运行步骤
-step 1/4:...seg corpus ...      
-step 2/4:...collect cowords ...    
-step 3/4:...compute sopmi ...  
-step 4/4:...save candiwords ...   
+step 1/4:   seg corpus       
+step 2/4:   collect cowords     
+step 3/4:   compute sopmi   
+step 4/4:   save candiwords    
 # 训练
 1）输入：  
 1、5W个文档，每个文档为一行，保存在'./data/train.txt'中  
