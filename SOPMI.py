@@ -79,8 +79,6 @@ class SoPmi:
                         word_dict[word] = 1
                     else:
                         word_dict[word] += 1
-
-
             all = sum(word_dict.values())
             return word_dict, all
         '''统计词共现次数'''
@@ -142,7 +140,6 @@ class SoPmi:
                 return [item.flag for item in pseg.cut(word)][0]
             else:
                 return 'x'
-
         pos_dict = dict()
         neg_dict = dict()
         f_neg = open(candineg_path, 'w+')
@@ -158,10 +155,8 @@ class SoPmi:
             f_pos.write(word + ',' + str(pmi) + ',' + 'pos' + ',' + str(len(word)) + ',' + get_tag(word) + '\n')
         for word, pmi in sorted(neg_dict.items(), key=lambda asd:asd[1], reverse=True):
             f_neg.write(word + ',' + str(pmi) + ',' + 'neg' + ',' + str(len(word)) + ',' + get_tag(word) + '\n')
-
         f_neg.close()
         f_pos.close()
-
         return
 
     def sopmi(self):
@@ -182,10 +177,9 @@ class SoPmi:
         self.save_candiwords(pmi_dict, self.candipos_path, self.candineg_path)
         end_time = time.time()
         print('finished! cost {0}'.format(end_time - start_time))
-
+        
 def test():
     sopmier = SoPmi()
     sopmier.sopmi()
-    
 
 test()
