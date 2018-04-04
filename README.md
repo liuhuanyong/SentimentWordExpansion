@@ -8,10 +8,10 @@ step 2/4:...collect cowords ...
 step 3/4:...compute sopmi ...  
 step 4/4:...save candiwords ...   
 # 训练
-1）输入：  
+1）输入：
 1、5W个文档，每个文档为一行，保存在'./data/train.txt'中  
 2、种子情感词：正负情感词各50个，共100个，格式为 ‘词\t极性’，保存在'./data/sentiment_words.txt'中  
-2）输出：
+2）输出：  
 1、格式：复杂,29.47870186147108,neg,2,a (词语,pmi值,情感极性,词长,词性)  
 2、正向扩充情感候选词，保存在'./data/candi_pos.txt'中   
 3、负向扩充情感候选词，保存在'./data/candi_neg.txt'中  
