@@ -20,7 +20,7 @@ step 4/4:   save candiwords
 # 结果：
 以65M语料, 2700个词作为语料进行训练，按照sopmi进行从大到小排序，分别取Pos Top20, Neg Top20:  
 1、Pos Top20  
-word	sopmi	polarity	word_length	postag
+word	sopmi	polarity	word_length	postag  
 引领	580.764033	pos	2	v  
 带动	427.556128	pos	2	v  
 特色	412.6122548	pos	2	n  
