@@ -1,5 +1,5 @@
 # SOPMI
-Self complemented sentiment words expansion using seed sentiment words and so-pmi , this method is tested to be effective.  
+Self complemented sentiment words expansion(情感词扩展) using seed sentiment words and so-pmi , this method is tested to be effective.  
 # 运行方式： 
 python SOPMI.py  
 # 运行步骤
